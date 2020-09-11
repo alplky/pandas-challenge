@@ -18,7 +18,10 @@ Players between the ages of 20 - 24 make up almost half of the total player coun
 - Each calulcaion was assinged to a variable, then passed into a data frame and formatting with f-strings for display output. 
 
 ### Gender Demograhics
-- 
+- In order to caluculate gender demographics, a new data frame was made consistig of the SN and Gender columns. Then .dropduplicates() was used with the SN column to assure only individual players were being counted in the analysis by gender. 
+- The gender count was achievied by grouping and counting by the Gender row. 
+- Each gender percentage was accounted for by dividing the gender count by the sum of the gender count, and rounding to two decimal places. 
+- The calulcations were assinged to variables and passed to a data frame. The data frame was then formatted using .style.format() to add the percentage symbols to the rows in the percentage column. 
 
 ### Purchasing Analysis (Gender)
 -
