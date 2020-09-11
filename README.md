@@ -41,7 +41,12 @@ Players between the ages of 20 - 24 make up almost half of the total player coun
 - The variables were then passed to a data frame for display output. The data frame was then formatted to add a percentage symbol to the rows in the percentage column. 
 
 ### Purchasing Analysis (Age)
-- 
+- The purchase count by age range was calculated by grouping by the Age Range column and using .count() on the Purchase ID column.
+- Total purchase value was calculated by grouping by the Age Range column and using .sum() on the Price column. 
+- Both calculations were then assigned to variables. 
+- The average price for each gender range was calculated by diving the total purchase by the purchase count and rounding to 2 decimal points. 
+- In order to calculate the average total purchase per person in each age range, first a variable was created by grouping by the Age Range column and counting the unique values of the SN column using .nunique(). The average was then calulated by dividing the total purchase value by the unique user count within each age range. 
+- The variables were then passed into a dataframe for display output. The data frame was formatted using .style.format() to add dollar signs to all rows within columns that contained monetary values.  
 
 ### Top Spenders
 - 
