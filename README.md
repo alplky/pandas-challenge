@@ -8,19 +8,32 @@ Players between the ages of 20 - 24 make up almost half of the total player coun
 
 ## Table Breakdowns:
 ### Player Count
-- 
+- Total players was caluculated using .nunique() on the SN(screen name) column to account for the unique players who have made purchases. This was then passed into a data frame for display output. 
+
 ### Purchasing Analysis (Total)
-- 
+- The number of unique items was counted by using .nunique() on the Item ID column.
+- The average price was calulcated by using .mean() on the Price column and rounding to 2 decimal places. 
+- Total purchase was caluculated by using .count() on the Purchase ID column.
+- Total revenue was done by using .sum() on the Price column. 
+- Each calulcaion was assinged to a variable, then passed into a data frame and formatting with f-strings for display output. 
+
 ### Gender Demograhics
 - 
+
 ### Purchasing Analysis (Gender)
 -
+
 ### Age Demographics
 - 
+
 ### Purchasing Analysis (Age)
 - 
+
 ### Top Spenders
 - 
+
 ### Most Popular Items 
 - 
+
 ### Most Profitable Items 
+-
