@@ -49,7 +49,11 @@ Players between the ages of 20 - 24 make up almost half of the total player coun
 - The variables were then passed into a dataframe for display output. The data frame was formatted using .style.format() to add dollar signs to all rows within columns that contained monetary values.  
 
 ### Top Spenders
-- 
+- The purchase count for each player was calculated by grouping by the SN column and using .count() on the Purchase ID column. 
+- The total purchase per person was calculated by grouping by the SN column and using .sum() on the Price column. 
+- Both calculations were then passed to variables. 
+- The average purchase price per player was calculated by diving the total purchase per person by the total purchase count per person, then rounding to 2 decimal points. 
+- The variables were then passed to a data frame for display output and sorted using .sort_values(), in descending order, by Total Purchase Value. Then, .head(5) was used to dispaly the top 5 spenders. The data frame was formatted using .style.format() to add dollar signs to the rows with columns containing monetary values. 
 
 ### Most Popular Items 
 - 
