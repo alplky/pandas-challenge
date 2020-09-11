@@ -24,10 +24,21 @@ Players between the ages of 20 - 24 make up almost half of the total player coun
 - The calulcations were assinged to variables and passed to a data frame. The data frame was then formatted using .style.format() to add the percentage symbols to the rows in the percentage column. 
 
 ### Purchasing Analysis (Gender)
--
+- Total purchases by gender were counted by grouping by the Gender column and using .count().
+- The total purchase value was calulcated by grouping by the Gender column and using .sum() on the Price column. 
+- Each caluclation was then assinged to a variable. 
+- To get the average purchase price by gender, the total purchase value was divided by the total count of gender purchases and rounded to 2 decimal places. 
+- The average total purchase per person in each gender group was calculated by diving the total purchase value by the unique gender count that was created for the Gender Demographics table, then rounded to 2 decimal places. 
+- The calculations for averages were both assigned to variables. 
+- All variables were then passed to a data frame for display output. The data frame was formated with .style.format() to add dollar signs to all of the rows for columns with monetary values. 
 
 ### Age Demographics
-- 
+- To create age ranges, pd.cut() was used and a new column "Age Ranges" was passed back into the data frame. Bins were used in increments of 4 years, from 0 to 45 (the max age in the dataset). Labels were created to accompany the respective bins. 
+- A new dataframe was created out of columns SN, Age Range, and Age from the original data frame. Then repeating screen names were removed with .dropduplicates() to account for each player only once. 
+- Age count was calculated by grouping by the Age Range column and using .count() on the Age column.
+- The percent of players in each age range was calculated by diving the age count by the sum of the age count, multiplying by 100 and rounding to 2 decimal places. 
+- Each calculation was assined to a variable. 
+- The variables were then passed to a data frame for display output. The data frame was then formatted to add a percentage symbol to the rows in the percentage column. 
 
 ### Purchasing Analysis (Age)
 - 
