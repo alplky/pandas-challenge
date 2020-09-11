@@ -56,7 +56,12 @@ Players between the ages of 20 - 24 make up almost half of the total player coun
 - The variables were then passed to a data frame for display output and sorted using .sort_values(), in descending order, by Total Purchase Value. Then, .head(5) was used to dispaly the top 5 spenders. The data frame was formatted using .style.format() to add dollar signs to the rows with columns containing monetary values. 
 
 ### Most Popular Items 
-- 
+- To analyze the most popular items, a data frame was created out of the columns Item ID, Item Name, and Price from the original data frame. 
+- The purchase count was calulated by grouping by the Item ID and Item Name columns and using .count() on the Item ID column.
+- The item price was assigned to a variable by grouping by the Item ID and Item Name columns and using .mean() on the Price column. 
+- The total purchase value was calculated by grouping by the Item ID and Item Name columns and using .sum() on the Price column. 
+- The calculations were then assinged to variables. 
+- The variables were then passed to a data frame for display output and sorted using .sort_values(), in descending order, by Purchase Count. To get the top 5 most popular items, .head(5) was used. The data frame was then formatted using .style.format() to add dollar signs to all rows in columns with monetary values. 
 
 ### Most Profitable Items 
--
+- The most profitable items table was created by reusing the Popular Items data frame and sorting by Total Purchase Value in descending order with .head(5). The dat frame was then formatted using .style.format() to add dollar signs to all rows in columns with monetary values.
